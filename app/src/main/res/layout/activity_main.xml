@@ -1,4 +1,3 @@
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment"
-    android:name="com.nrcssoilhealth.MainActivityFragment" tools:layout="@layout/fragment_main"
-    android:layout_width="match_parent" android:layout_height="match_parent" />
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.view.ViewPager android:textSize="25.0sp" android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/soilquestion"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
