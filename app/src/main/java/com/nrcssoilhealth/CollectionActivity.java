@@ -31,10 +31,10 @@ public class CollectionActivity
     public void onCreate(Bundle paramBundle)
     {
         super.onCreate(paramBundle);
-        setContentView(2130903040);
+        setContentView(R.layout.activity_collection_demo);
         this.mDemoCollectionPagerAdapter = new DemoCollectionPagerAdapter(getSupportFragmentManager());
         getActionBar().setDisplayHomeAsUpEnabled(true);
-        this.mViewPager = ((ViewPager)findViewById(2131296256));
+        this.mViewPager = ((ViewPager)findViewById(R.id.pager));
         this.mViewPager.setAdapter(this.mDemoCollectionPagerAdapter);
     }
 
@@ -156,7 +156,7 @@ public class CollectionActivity
 
         public View onCreateView(LayoutInflater paramLayoutInflater, ViewGroup paramViewGroup, Bundle paramBundle)
         {
-            paramLayoutInflater = paramLayoutInflater.inflate(2130903042, paramViewGroup, false);
+            paramLayoutInflater = paramLayoutInflater.inflate(R.layout.fragment_collection_object, paramViewGroup, false);
             paramViewGroup = getArguments();
             ((TextView)paramLayoutInflater.findViewById(16908308)).setText(Integer.toString(paramViewGroup.getInt("Quiz")));
             return paramLayoutInflater;
@@ -168,7 +168,7 @@ public class CollectionActivity
     {
         public View onCreateView(LayoutInflater paramLayoutInflater, ViewGroup paramViewGroup, Bundle paramBundle)
         {
-            return paramLayoutInflater.inflate(2130903043, paramViewGroup, false);
+            return paramLayoutInflater.inflate(R.layout.fragment_collection_quiz1, paramViewGroup, false);
         }
     }
 
@@ -177,7 +177,7 @@ public class CollectionActivity
     {
         public View onCreateView(LayoutInflater paramLayoutInflater, ViewGroup paramViewGroup, Bundle paramBundle)
         {
-            return paramLayoutInflater.inflate(2130903044, paramViewGroup, false);
+            return paramLayoutInflater.inflate(R.layout.fragment_collection_quiz2, paramViewGroup, false);
         }
     }
 
@@ -186,7 +186,7 @@ public class CollectionActivity
     {
         public View onCreateView(LayoutInflater paramLayoutInflater, ViewGroup paramViewGroup, Bundle paramBundle)
         {
-            return paramLayoutInflater.inflate(2130903048, paramViewGroup, false);
+            return paramLayoutInflater.inflate(R.layout.fragment_collection_review, paramViewGroup, false);
         }
     }
 
@@ -195,7 +195,7 @@ public class CollectionActivity
     {
         public View onCreateView(LayoutInflater paramLayoutInflater, ViewGroup paramViewGroup, Bundle paramBundle)
         {
-            return paramLayoutInflater.inflate(2130903045, paramViewGroup, false);
+            return paramLayoutInflater.inflate(R.layout.fragment_collection_quiz3, paramViewGroup, false);
         }
     }
 }
